@@ -14,3 +14,9 @@ Pass APP_NAME environment variable to customize the application name on the resp
 
 Warning, this is not suitable for stress testing since the netcat command can
 only handle one concurrent request per second.
+
+
+Run with
+
+    docker run -it --rm -p 80:8080 -e APP_NAME=my-app bermi/http-hello-world
+
